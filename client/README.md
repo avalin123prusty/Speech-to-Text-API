@@ -20,7 +20,22 @@ npm run dev
 ## Notes
 
 - The frontend expects the backend API at `http://localhost:4000` by default.
-- If you want to use a different backend URL, add a `VITE_API_URL` environment variable to `client/.env`.
+- If you want to use a different backend URL, add `VITE_API_URL` to `client/.env` or set it in your deployment environment.
+
+## Deployment
+
+### Netlify
+
+- Build command: `npm run build`
+- Publish directory: `dist`
+- Set `VITE_API_URL` to your backend URL in Netlify environment variables.
+
+### Vercel
+
+- Framework preset: Vite
+- Build command: `npm run build`
+- Output directory: `dist`
+- Set `VITE_API_URL` to your backend URL in Vercel environment variables.
 
 ## Workflow
 

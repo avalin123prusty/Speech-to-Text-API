@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: speech-to-text-backend
+    env: node
+    region: oregon
+    plan: free
+    branch: main
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
